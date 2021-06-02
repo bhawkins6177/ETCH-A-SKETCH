@@ -39,9 +39,33 @@ body {
 
 .content{
     display: flex;
-
     border-style: solid;
     border-color : black;
     flex-grow: 1;
     
+}
+
+.hoverContent {
+    color: darkblue;
+}
+
+.UserContent {
+    display: flex;
+    border-style: solid;
+    border-color : black;
+    flex-grow: 1;
+}
+
+.UserRow {
+    display: flex;
+    flex-grow: 1
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+}
+
+#ButtonDiv {
+    padding-left: 100px;
 }
