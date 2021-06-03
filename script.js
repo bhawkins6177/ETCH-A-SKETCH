@@ -14,17 +14,19 @@ function StartBoard(input) {
             content.classList.add('content')
             row.appendChild(content)
         }
-    }    
-}
+    }  
+    let content = document.querySelectorAll('.content')
+        content.forEach(function(box) {
+        box.addEventListener('mouseenter', function(){
+        box.classList.add('hoverContent')  
+                    })
+                }  
+            )  
+        }
 
 let input = 16
 
 StartBoard(input)
-
-
-
-
-
 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', function(){
@@ -32,19 +34,14 @@ btn.addEventListener('click', function(){
     const container = document.getElementById('container');
     container.innerHTML = ''; 
 
+
+
     StartBoard (UserInput)
 
     
 })
 
-let content = document.querySelectorAll('.content')
-content.forEach(function(box) {
-    box.addEventListener('mousemove', function(){
-        box.classList.add('hoverContent')
 
-        })
-    }  
-)
 
     
 /*

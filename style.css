@@ -39,13 +39,13 @@ body {
 
 .content{
     display: flex;
-    border-style: solid;
-    border-color : black;
+    
+    
     flex-grow: 1;
     
 }
 
-.hoverContent:hover {
+.hoverContent {
     background-color: darkblue;
 }
 
