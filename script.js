@@ -17,38 +17,51 @@ function StartBoard(input) {
     }    
 }
 
-
-
 let input = 16
+
 StartBoard(input)
 
-//FIND A WAY TO CLEAR THE BOARD
+
+
+
+
 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', function(){
-    let UserInput = prompt('please enter a number')
-    
+    let UserInput = prompt('please enter a number');
+    const container = document.getElementById('container');
+    container.innerHTML = ''; 
 
-    for (let i = 0; i < UserInput; i++) {
-        let row = document.querySelector('.row')
-        let content = document.querySelector('.content')
-        row.removeChild(content)
-        
-        
-            for (let i= 0; i< UserInput; i++) {
-                let row = document.querySelector('.row')
-                container.removeChild(row)
-        }
-    }
     StartBoard (UserInput)
+
+    
 })
 
-/*let content = document.querySelectorAll('.content');
-content.addEventListener ('hover',function() {
-    content.classList.add ('hoverContent')
-})
+let content = document.querySelectorAll('.content')
+content.forEach(function(box) {
+    box.addEventListener('mousemove', function(){
+        box.classList.add('hoverContent')
+
+        })
+    }  
+)
+
     
-/*function UserBoard() {
+/*
+
+for (let i=0; i< input*input; i++) {
+    
+    let content = document.querySelector('.content');
+    content.addEventListener('mouseenter',function() {
+        content.classList.add('hoverContent')
+        console.log('test')
+    })}
+
+
+
+
+
+function UserBoard() {
     console.log('test')
     //const row = document.getElementById ('row');
     //row.remove();
@@ -72,4 +85,8 @@ content.addEventListener ('hover',function() {
             UserContent.appendChild(UserRow)
         }
     }
-}*/
+}
+
+
+
+*/

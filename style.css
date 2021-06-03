@@ -45,8 +45,8 @@ body {
     
 }
 
-.hoverContent {
-    color: darkblue;
+.hoverContent:hover {
+    background-color: darkblue;
 }
 
 .UserContent {
