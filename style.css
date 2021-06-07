@@ -1,25 +1,11 @@
- /*#container {
-     display: flex;
-     justify-content: center;
-     padding: 20px;
-    min-width: 100vh;
-    min-height: 75vh;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
- }
-
- .content {
-     display: flex;
-     background: red;
-     border-color: rgb(6, 5, 29);
-     border-style: solid;
-
- }
-*/
+html{
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #container {
     display: flex;
@@ -30,6 +16,7 @@ body {
     flex-direction: column;
     border-style: solid;
     border-color: black;
+    background-color: white;
 }
 
 .row {
@@ -39,14 +26,11 @@ body {
 
 .content{
     display: flex;
-    
-    
     flex-grow: 1;
-    
 }
 
 .hoverContent {
-    background-color: darkblue;
+    background-color: black;
 }
 
 .UserContent {
@@ -61,11 +45,14 @@ body {
     flex-grow: 1
 }
 
-#button {
-    height: 50px;
-    width: 100px;
+#btn {
+    height: 100px;
+    width: 200px;
+    font-size: x-large;
+    border-radius: 10px;
+    background-color: silver;
 }
 
 #ButtonDiv {
-    padding-left: 100px;
+    padding-bottom:25px;
 }
